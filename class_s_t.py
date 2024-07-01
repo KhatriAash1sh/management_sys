@@ -16,7 +16,7 @@ class student:
         self.address=address
         self.Rollno=Rollno
 
-    def edit(self):
+    def detail(self):
         self.status=input("enter status: ")
         self.Name=input("enter the name: ")
         self.email=input("email: ")
@@ -41,7 +41,7 @@ class teacher(student):
         student.phone=phone
         student.address=address
 
-    def edit(self):
+    def detail(self):
         self.status=input("enter status: ")
         self.Name=input("enter the name: ")
         self.email=input("email: ")
@@ -63,14 +63,7 @@ class teacher(student):
 # print(master_key.email)
 selection_login=input("Enter the login selection 'Teacher' for Teacher or 'Student' for student: ")
 
-if selection_login=="Teacher":
-    Name=input("Enter the name of Teacher: ")
-    id=int(input("Enter the id No. of Teacher: "))
-    email=input("Enter the email: ")
-    phone=int(input("Enter the phone No.: "))
-    address=input("Enter the address: ")
-    subjectstatus=input("Enter the subject:")
-    T1=teacher("Teacher",Name,email,phone,address,id,subjectstatus)
+
     
 
 
